@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+body, html {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  background-color: rgb(6, 6, 29);
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/846/616/937/digital-digital-art-artwork-illustration-drawing-hd-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+.heading h1{
+  background-color: rgb(255, 189, 7);
+  color: rgba(0, 0, 0, 0.918);
+  text-shadow: 0px -5px rgb(252, 152, 2);
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-weight: 900;
+}
+.heading p {
+  background-color: rgb(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  font-size: calc(1em + 0.4rem);
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#q-graph {
+  position: absolute;
+  bottom: 10px;
+  width: 500px; 
+  padding: 0;
+  background: transparent;
+  font-size: 11px;
+  text-align: center;
+}
+
+#q-graph tr, #q-graph th, #q-graph td { 
+  position: absolute;
+  bottom: 0; 
+  width: 150px; 
+  z-index: 2;
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+#q-graph #one {
+
+  background-color: rgb(248, 170, 0);
+  width: 50px;
+  left: 20px;
+  height: 100px;
+  box-shadow: 5px 10px 2px;
+  transition: 2s ease height;
+}
+
+#q-graph #two {   
+    box-shadow: 5px 10px 2px;
+    width: 50px;
+    left: 80px;
+    height: 100px;
+    transition: 2s ease height;
+}
+#q-graph #three {
+    box-shadow: 5px 10px 2px;
+    width: 50px;
+    left: 140px;
+    height: 100px;
+    transition: 2s ease height;
+}
+#q-graph #four {
+
+    width: 50px;
+    left: 200px;
+    height: 100px;
+    box-shadow: 5px 10px 2px;
+    transition: 2s ease height;
+}
+#q-graph #five {
+  
+    width: 50px;
+    left: 260px;
+    height: 100px;
+    box-shadow: 5px 10px 2px;
+    transition: 2s ease height;
+}
+
+#q-graph #six {
+    box-shadow: 5px 10px 2px;
+    width: 50px;
+    left: 320px;
+    height: 100px;
+    transition: 2s ease height;
+}
+#q-graph #seven {
+    box-shadow: 5px 10px 2px;
+    width: 50px;
+    left: 380px;
+    height: 100px;
+    transition: 2s ease height;
+}
+#q-graph #eight {
+    box-shadow: 5px 10px 2px;
+    width: 50px;
+    left: 440px;
+    height: 100px;
+    transition: 2s ease height;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus{
+    outline: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input{
+    background-color: rgb(73, 117, 211);
+    border: none;
+    border-top: 2px double blue;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top:-20px;
+    box-shadow: 2px 0px 3px rgb(0, 0, 32);
+    font-weight: 900;
+    font-size: 13px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.color{
+  background-color: rgb(248, 170, 0);
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes move {
+ 0%{
+   background-color: rgb(248, 170, 0);
+    opacity: 0;
+  }
+  50%{
+    background-color: rgb(248, 170, 0);
+    opacity: 0.5;
+   padding: 10px;
+  }
+  100%{
+    background-color: rgb(248, 170, 0);
+    opacity: 1;
+  }
+}
+.remove{
+  background-color: rgb(0, 0, 0);
+  animation-name: remove;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes remove {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+    padding: 5px;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 915px) {
+  .heading p{
+    font-size: 15px;
+    width: 90%;
+  }
+  #q-graph #one, #two, #three, #four, #five, #six, #seven, #eight {
+    width: 45px;
+    
+  }
+  #q-graph #one {
+
+    background-color: rgb(248, 170, 0);
+    left: 10px;
+    height: 100px;
+    transition: 2s ease height;
+  }
+  
+  #q-graph #two {   
+
+      left: 65px;
+      height: 100px;
+      transition: 2s ease height;
+  }
+  #q-graph #three {
+      box-shadow: 5px 10px 5px;
+      left: 125px;
+      height: 100px;
+      transition: 2s ease height;
+  }
+  #q-graph #four {
+      left: 185px;
+      height: 100px;
+      box-shadow: 5px 10px 5px;
+      transition: 2s ease height;
+  }
+  #q-graph #five {
+      left: 245px;
+      height: 100px;
+      transition: 2s ease height;
+  }  
+  #q-graph #six {
+      left: 305px;
+      height: 100px;
+      transition: 2s ease height;
+  }
+  #q-graph #seven {
+      left: 365px;
+      height: 100px;
+      transition: 2s ease height;
+  }
+  #q-graph #eight {
+      left: 425px;
+      height: 100px;
+      transition: 2s ease height;
+  }
+}
